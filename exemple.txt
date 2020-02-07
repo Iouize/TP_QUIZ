@@ -1,0 +1,42 @@
+
+Mettre en place le dépôt Git
+
+POste de dev de chacun
+
+Travail sur l'inteface HTML/CSS
+
+Travail sur les données avec exemple de thème,
+de quiz, de question
+data \ q1 \ quiz.json
+        img \ 
+
+structure quiz.json :
+{
+    "questions" : [
+        {
+            "id" : 1,
+            "titre" : "Depuis combien de temps règne Elisabeth II ?"
+            "img" : "famille_royale.jpg",
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "73 ans"
+                    "correcte" : true
+                },
+                {
+                    "id" : 2,
+                    "titre" : "50 ans"
+                }
+            ]
+        }
+        ,
+        
+    ]
+}
+
+Travail sur la récupération d'un quiz : 
+Chargement AJAX avec fetch
+
+async function recupere_quizz(id) {
+
+}
