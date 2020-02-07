@@ -37,6 +37,7 @@ structure quiz.json :
 Travail sur la récupération d'un quiz : 
 Chargement AJAX avec fetch
 
+main.js
 async function recupere_quizz(id) {
 
 }

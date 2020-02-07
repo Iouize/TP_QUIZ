@@ -3,12 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <script src="script.js"></script>
 </head>
 <body>
-  ...
-  <!-- Le reste du contenu -->
-  ...
+  
+  <h1>Quiz</h1>
+
+  <div id="app"></div>
+<script>
+  recupereQuiz(1).then(quiz => {
+    console.log(quiz);
+      let html = `Nombre de questions ${quiz.questions.length}`;
+      quiz.questions.forEach(Element => {
+        html += `<div>${element.titre}</div>`;
+      });
+      document.getElementById('app').innerHTML = html;
+  })
+
+</script>
+
 </body>
 </html>

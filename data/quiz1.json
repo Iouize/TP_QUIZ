@@ -1,0 +1,48 @@
+{
+    "questions" : [
+        {
+            "id" : 1,
+            "titre" : "Depuis combien de temps règne Elisabeth II ?",
+            "img" : "famille_royale.jpg",
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "73 ans",
+                    "correcte" : true
+                },
+                {
+                    "id" : 2,
+                    "titre" : "50 ans"
+                },
+                {
+                    "id" : 3,
+                    "titre" : "J'en sais foutre rien"
+                }
+
+            ]
+        },
+
+        {
+            "id" : 2,
+            "titre" : "Quelle est la couleur du cheval blanc d'henri III ?",
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "Bleu"
+                    
+                },
+                {
+                    "id" : 2,
+                    "titre" : "Blanc",
+                    "correcte" : true
+                },
+                {
+                    "id" : 3,
+                    "titre" : "J'en sais foutre rien"
+                }
+            ] 
+        }
+
+        
+    ]
+}
