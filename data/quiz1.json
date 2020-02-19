@@ -1,9 +1,12 @@
+// Toutes les questions du thème Histoire
+
 {
     "questions" : [
         {
             "id" : 1,
             "titre" : "Depuis combien de temps règne Elisabeth II ?",
             "img" : "famille_royale.jpg",
+            "id_quiz": 1,
             "reponses" : [
                 {
                     "id" : 1,
@@ -24,11 +27,12 @@
 
         {
             "id" : 2,
-            "titre" : "Quelle est la couleur du cheval blanc d'henri III ?",
+            "titre" : "Quelle est la couleur du cheval blanc d'Henri III ?",
+            "id_quiz": 1,
             "reponses" : [
                 {
                     "id" : 1,
-                    "titre" : "Bleu"
+                    "titre" : "#FFFFFF"
                     
                 },
                 {
@@ -41,6 +45,29 @@
                     "titre" : "J'en sais foutre rien"
                 }
             ] 
+        },
+
+        {
+            "id" : 3,
+            "titre" : "Qu'est ce que la bataille de Waterloo ?",
+            "img" : "",
+            "id_quiz": 2,
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "Une chanson d'Abba",
+                },
+                {
+                    "id" : 2,
+                    "titre" : "Un conflit qui s'est réglé dans une piscine",
+                },
+                {
+                    "id" : 3,
+                    "titre" : "J'en sais foutre rien",
+                    "correcte" : true
+                }
+
+            ]
         }
 
         
