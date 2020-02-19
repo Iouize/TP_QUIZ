@@ -33,4 +33,9 @@ export function getTheme(id) {
   export function getQuiz(id) {
     return listeQuiz.find(item => item.id === id);
   }
+
+   
+  export function getListeQuiz(idTheme){
+    return listeQuiz.find(item => item.idTheme === idTheme);
+  };
   
