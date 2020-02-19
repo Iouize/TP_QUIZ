@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Theme from "./components/Theme.vue";
+import Theme from "./components/ListQuiz.vue";
 import ThemeSelect from "./components/ThemeSelect.vue";
-import * as data from "../data/quiz";
+import * as data from "../data/data";
 
 export default {
   name: "app",
@@ -38,7 +38,8 @@ export default {
 <style>
 .theme-bloc {
   padding-top: 1rem;
-  background-color: #aca0c2;
+  background-color: aqua;
+
 }
 .quiz-bloc {
   padding-top: 1rem;

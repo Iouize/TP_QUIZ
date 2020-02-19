@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import { getTheme } from "../../data/quiz";
+import { getTheme } from "../../data/data";
 export default {
-  name: "Theme",
+  name: "ListQuiz",
   props: ["idTheme"],
   data: function() {
     return {};
