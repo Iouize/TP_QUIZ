@@ -13,7 +13,7 @@
 <script>
 import Theme from "./components/Theme.vue";
 import ThemeSelect from "./components/ThemeSelect.vue";
-import * as data from "../data/TP_QUIZ";
+import * as data from "../data/quiz";
 
 export default {
   name: "app",

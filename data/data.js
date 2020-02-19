@@ -7,22 +7,8 @@ export const liste_theme = [
     {
         id:2,
         titre: 'Peinture',
-    },
-
-    {
-        id:3,
-        titre:'Football',
-    },
-
-    {
-        id:4,
-        titre:'Rubicks Cube',
-    },
-
-    {
-        id:5,
-        titre:'Musique'
     }
+
 ]
 
 export const liste_quiz = [

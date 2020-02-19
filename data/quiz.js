@@ -1,3 +1,6 @@
+// Modèle Mais inutile
+
+
 export const listeTheme = [
   {
     id: 1,
@@ -21,6 +24,8 @@ export const listeQuiz = [
     idTheme: 1
   }
 ];
+
+
 
 export function getTheme(id) {
   return listeTheme.find(item => item.id === id);
