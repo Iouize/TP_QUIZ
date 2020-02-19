@@ -1,14 +1,15 @@
 <template>
-  <div>
-    <div class="d-flex align-items-end quiz-title-bloc" v-if="theme">
-      <h3 class="flex-fill quiz-title-text">Quiz 1 de {{ theme.titre }}</h3>
+  <div v-if="theme">
+    <div class="d-flex align-items-end quiz-title-bloc" v-for="quiz in listeQuiz" :key="quiz.id">
+      <h3 class="flex-fill quiz-title-text"> {{ quiz.titre }}</h3>
       <button type="button" class="btn btn-secondary btn-sm">Lancer</button>
     </div>
   </div>
 </template>
 
 <script>
-import { getTheme } from "../../data/data";
+import { getTheme, getListeQuiz } from "../../data/data";
+
 export default {
   name: "ListQuiz",
   props: ["idTheme"],
@@ -18,9 +19,16 @@ export default {
   computed: {
     theme: function() {
       return getTheme(this.idTheme);
+    },
+
+    listeQuiz: function(){
+      return getListeQuiz(this.idTheme);
+    }
     }
   }
-};
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
