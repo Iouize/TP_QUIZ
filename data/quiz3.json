@@ -2,18 +2,18 @@
     "questions" : [
         {
             "id" : 1,
-            "titre" : "Depuis combien de temps règne Elisabeth II ?",
-            "img" : "famille_royale.jpg",
-            "id_quiz": 1,
+            "titre" : "Qui est Picasso ?",
+            "img" : "",
+            "id_quiz": 3,
             "reponses" : [
                 {
                     "id" : 1,
-                    "titre" : "73 ans",
-                    "correcte" : true
+                    "titre" : "Un gars qu'a piqué le seau d'un autre gars"
                 },
                 {
                     "id" : 2,
-                    "titre" : "50 ans"
+                    "titre" : "Un type de bagnoles",
+                    "correcte" : true
                 },
                 {
                     "id" : 3,
@@ -25,24 +25,28 @@
 
         {
             "id" : 2,
-            "titre" : "Quelle est la couleur du cheval blanc d'Henri III ?",
-            "id_quiz": 1,
+            "titre" : "Qu'a peint Picasso ?",
+            "img" : "",
+            "id_quiz": 3,
             "reponses" : [
                 {
                     "id" : 1,
-                    "titre" : "#FFFFFF"
-                    
+                    "titre" : "Guernica tmtc",
+                    "correcte" : true
                 },
                 {
                     "id" : 2,
-                    "titre" : "Blanc",
-                    "correcte" : true
+                    "titre" : "Des tableaux"
+                    
                 },
                 {
                     "id" : 3,
                     "titre" : "J'en sais foutre rien"
                 }
-            ] 
+
+            ]
         }
+
+        
     ]
 }

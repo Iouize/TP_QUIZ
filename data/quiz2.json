@@ -2,22 +2,22 @@
     "questions" : [
         {
             "id" : 1,
-            "titre" : "Depuis combien de temps règne Elisabeth II ?",
-            "img" : "famille_royale.jpg",
-            "id_quiz": 1,
+            "titre" : "Qu'est ce que la bataille de Waterloo ?",
+            "img" : "",
+            "id_quiz": 2,
             "reponses" : [
                 {
                     "id" : 1,
-                    "titre" : "73 ans",
-                    "correcte" : true
+                    "titre" : "Une chanson d'Abba"
                 },
                 {
                     "id" : 2,
-                    "titre" : "50 ans"
+                    "titre" : "Un conflit qui s'est réglé dans une piscine"
                 },
                 {
                     "id" : 3,
-                    "titre" : "J'en sais foutre rien"
+                    "titre" : "J'en sais foutre rien",
+                    "correcte" : true
                 }
 
             ]
@@ -25,24 +25,27 @@
 
         {
             "id" : 2,
-            "titre" : "Quelle est la couleur du cheval blanc d'Henri III ?",
-            "id_quiz": 1,
+            "titre" : "Quand cette bataille a t-elle eu lieu ?",
+            "img" : "",
+            "id_quiz": 2,
             "reponses" : [
                 {
                     "id" : 1,
-                    "titre" : "#FFFFFF"
-                    
+                    "titre" : "Jadis",
+                    "correcte" : true
                 },
                 {
                     "id" : 2,
-                    "titre" : "Blanc",
-                    "correcte" : true
+                    "titre" : "En 2017"
                 },
                 {
                     "id" : 3,
                     "titre" : "J'en sais foutre rien"
                 }
-            ] 
+
+            ]
         }
+
+        
     ]
 }

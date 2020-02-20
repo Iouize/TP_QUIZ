@@ -22,6 +22,12 @@ export const listeQuiz = [
         id:2,
         titre:'Waterloo',
         idTheme:1,
+    },
+
+    {
+        id: 3,
+        titre:"Picasso",
+        idTheme: 2,
     }
     
 ]
@@ -36,6 +42,6 @@ export function getTheme(id) {
 
    
   export function getListeQuiz(idTheme){
-    return listeQuiz.find(item => item.idTheme === idTheme);
+    return listeQuiz.filter(item => item.idTheme === idTheme);
   };
   
