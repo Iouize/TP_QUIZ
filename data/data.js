@@ -7,6 +7,11 @@ export const listeTheme = [
     {
         id:2,
         titre: 'Peinture',
+    },
+
+    {
+        id:3,
+        titre: 'Cinéma',
     }
 
 ]
@@ -28,6 +33,12 @@ export const listeQuiz = [
         id: 3,
         titre:"Picasso",
         idTheme: 2,
+    },
+
+    {
+        id:4,
+        titre: "Réalisateurs",
+        idTheme:3
     }
     
 ]

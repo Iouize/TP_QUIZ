@@ -1,0 +1,52 @@
+{
+    "questions" : [
+        {
+            "id" : 1,
+            "titre" : "Qui a réalisé Pulp Fiction ?",
+            "img" : "",
+            "id_quiz": 4,
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "Quentin Tarantino",
+                    "correcte" : true
+                },
+                {
+                    "id" : 2,
+                    "titre" : "Christopher Nolan"
+                },
+                {
+                    "id" : 3,
+                    "titre" : "J'en sais foutre rien"
+                }
+
+            ]
+        },
+
+        {
+            "id" : 2,
+            "titre" : "Quel est le réalisateur préféré de Jamie Smith ?",
+            "img" : "",
+            "id_quiz": 4,
+            "reponses" : [
+                {
+                    "id" : 1,
+                    "titre" : "Wes Anderson"
+                },
+                {
+                    "id" : 2,
+                    "titre" : "Ken Loach"
+                    
+                },
+                {
+                    "id" : 3,
+                    "titre" : "J'en sais foutre rien",
+                    "correcte" : true
+                }
+
+            ]
+        }
+
+        
+    ]
+}
