@@ -13,6 +13,17 @@ export default {
   data: function() {
     return {};
   },
+
+  watch: {
+    idQuiz: function() {
+      if (this.idQuiz) {
+        getQuizAjax(this.idQuiz).then(json => {
+          this.listeQuestions = json;
+        });
+      }
+    }
+  }
+  4
   computed: {
     listeQuestions: function(){
       const json = getListeQuestions(this.idQuiz);
