@@ -1,8 +1,18 @@
 <template>
   <div v-if="theme">
-    <div class="d-flex align-items-end quiz-title-bloc" v-for="quiz in listeQuiz" :key="quiz.id">
-      <h3 class="flex-fill quiz-title-text"> {{ quiz.titre }}</h3>
-      <button type="button" class="btn btn-secondary btn-sm" @click="selectQuiz(quiz)">Lancer</button>
+    <div
+      class="d-flex align-items-end quiz-title-bloc"
+      v-for="quiz in listeQuiz"
+      :key="quiz.id"
+    >
+      <h3 class="flex-fill quiz-title-text">{{ quiz.titre }}</h3>
+      <button
+        type="button"
+        class="btn btn-secondary btn-sm"
+        @click="selectQuiz(quiz)"
+      >
+        Lancer
+      </button>
     </div>
   </div>
 </template>
@@ -21,21 +31,18 @@ export default {
       return getTheme(this.idTheme);
     },
 
-    listeQuiz: function(){
+    listeQuiz: function() {
       return getListeQuiz(this.idTheme);
     }
-    },
+  },
 
-    methods: {
+  methods: {
     selectQuiz(quiz) {
       this.quiz = quiz;
       this.$emit("select-quiz", quiz.id);
     }
   }
-  }
-
-
-
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

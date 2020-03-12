@@ -39,7 +39,6 @@ export default {
 .theme-bloc {
   padding-top: 1rem;
   background-color: aqua;
-
 }
 .quiz-bloc {
   padding-top: 1rem;
