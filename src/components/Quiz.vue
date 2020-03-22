@@ -5,31 +5,35 @@
 </template>
 
 <script>
-import { afficheQuestions } from "../../data/questions";
+import { getQuiz } from "../data/data";
+import { getQuestions } from "../data/questions";
+
 
 export default {
   name: "Quiz",
   props: ["idQuiz"],
   data: function() {
-    return {};
+    return {
+      listeQuestions: null
+    }
   },
 
   watch: {
     idQuiz: function() {
       if (this.idQuiz) {
-        getQuizAjax(this.idQuiz).then(json => {
+        getQuestions(this.idQuiz).then(json => {
           this.listeQuestions = json;
         });
       }
     }
-  }
-  4
+  },
+  
   computed: {
-    listeQuestions: function(){
-      const json = getListeQuestions(this.idQuiz);
+    quiz : function(){
+      return getQuiz(this.idQuiz);
     }
     }
-  }
+}
 
 
 
