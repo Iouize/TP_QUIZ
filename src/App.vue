@@ -1,46 +1,51 @@
 <template>
   <main id="app" class="container-fluid">
     <div class="row vh-100">
-      <div class="col-lg-4 theme-bloc">
-        <ThemeSelect :listeTheme="listeTheme" @select-theme="onSelectTheme" />
-        <Theme :idTheme="idTheme" />
+      <div>
+        <div class="theme">
+          <ThemeSelect :listeTheme="listeTheme" @select-theme="onSelectTheme" />
+          <hr>
+          <ListQuiz :idTheme="idTheme" @select-quiz="onSelectQuiz"/>
+        </div>
+        <div>
+        <Quiz :idQuiz="idQuiz"/>
+        </div>
       </div>
-      <div class="col-lg-8 quiz-bloc">QUIZ</div>
     </div>
   </main>
 </template>
 
 <script>
-import Theme from "./components/ListQuiz.vue";
+import ListQuiz from "./components/ListQuiz.vue";
 import ThemeSelect from "./components/ThemeSelect.vue";
-import * as data from "../data/data";
+import * as data from "./data/data";
+import Quiz from "./components/Quiz.vue";
 
 export default {
   name: "app",
   components: {
-    Theme,
-    ThemeSelect
+    ListQuiz,
+    ThemeSelect,
+    Quiz
   },
   data: function() {
     return {
       listeTheme: data.listeTheme,
-      idTheme: null
+      idTheme: null,
+      idQuiz: null
     };
   },
   methods: {
     onSelectTheme(idTheme) {
       this.idTheme = idTheme;
+    },
+    onSelectQuiz(idQuiz) {
+      this.idQuiz = idQuiz;
     }
   }
 };
 </script>
 
 <style>
-.theme-bloc {
-  padding-top: 1rem;
-  background-color: aqua;
-}
-.quiz-bloc {
-  padding-top: 1rem;
-}
+
 </style>
