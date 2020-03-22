@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { getTheme, getListeQuiz } from "../../data/data";
+import { getTheme, getListeQuiz } from "../data/data";
 
 export default {
   name: "ListQuiz",
