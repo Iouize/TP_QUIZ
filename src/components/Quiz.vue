@@ -1,6 +1,27 @@
 <template>
-  <div>Quiz : {{ idQuiz }}
-    {{ listeQuestions.questions.length }}
+  <div class="bloc-questions">
+    <div>
+    <h3>Quiz : {{ quiz.titre }}</h3>
+    <p>
+      Nombre de questions : {{ listeQuestions ? listeQuestions.length : 0}}
+    </p>
+  </div>
+  <div v-if="quiz">
+  <div
+      class="quiz-title-bloc" v-for="item in listeQuestions" :key="item.id">
+      <div>
+        <h3 class="quiz-title-text">{{ item.titre }}</h3>
+        <div v-for="reponse in item.reponses" :key="reponse.id">
+          <input :id="reponse.id" type="radio" :name="item.id" :value="reponse.correcte">
+          <label :for="reponse.id"> {{ reponse.titre }}</label>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
   </div>
 </template>
 
