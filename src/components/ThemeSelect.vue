@@ -43,7 +43,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.bloc-theme {
+  width : 600px;
+}
+
+
 .theme-title {
   margin-right: 1rem;
+}
+
+.btn{
+  background-color : #26adbe;
+}
+
+.btn:hover {
+  background-color:white;
+  color: #048b9a;
 }
 </style>

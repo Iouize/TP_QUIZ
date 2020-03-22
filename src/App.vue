@@ -48,4 +48,43 @@ export default {
 
 <style>
 
+#app {
+  font-family : sans-serif;
+}
+
+.theme{
+  display:flex;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px){
+  .theme {
+  display:block;
+}
+}
+
+.quiz-bloc {
+  padding-top: 1rem;
+}
+
+button {
+    background-color: #048b9a;
+    border: inherit;
+    color: #eee;
+    text-align: center;    
+    padding : 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+button:hover{
+cursor: pointer;
+}
+
+hr {
+  margin : 1rem;
+}
+
+
 </style>

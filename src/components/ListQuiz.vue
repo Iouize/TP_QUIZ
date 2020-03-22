@@ -1,18 +1,8 @@
 <template>
-  <div v-if="theme">
-    <div
-      class="d-flex align-items-end quiz-title-bloc"
-      v-for="quiz in listeQuiz"
-      :key="quiz.id"
-    >
-      <h3 class="flex-fill quiz-title-text">{{ quiz.titre }}</h3>
-      <button
-        type="button"
-        class="btn btn-secondary btn-sm"
-        @click="selectQuiz(quiz)"
-      >
-        Lancer
-      </button>
+  <div v-if="theme" class="bloc-quiz">
+    <div class="d-flex align-items-end quiz-title-bloc" v-for="quiz in listeQuiz" :key="quiz.id">
+      <h3 class="flex-fill quiz-title-text"> {{ quiz.titre }}</h3>
+      <button type="button" class="btn btn-secondary btn-sm" @click="selectQuiz(quiz.id)">Lancer</button>
     </div>
   </div>
 </template>
@@ -47,6 +37,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
+.bloc-quiz {
+  width : 100%;
+}
+
+
 .quiz-title-bloc {
   margin-top: 2rem;
   margin-bottom: 0.5rem;

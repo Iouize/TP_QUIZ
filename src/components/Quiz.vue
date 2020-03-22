@@ -62,6 +62,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.bloc-questions {
+  background-color : #048b9a;
+  color: white;
+  padding: 1rem;
+}
+
 .quiz-title-bloc {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -70,4 +77,6 @@ export default {
 .quiz-title-text {
   margin: 0;
 }
+
 </style>
+
