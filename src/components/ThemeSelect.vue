@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="bloc-theme">
     <h2 class="theme-title">Thème</h2>
     <button
-      class="btn btn-primary d-block"
+      class="btn-primary d-block"
       @click="montrerListe = !montrerListe"
     >
-      {{ theme ? theme.titre : "Choisir un thème..." }}
+      {{ theme ? theme.titre : "Choisir un thème" }}
     </button>
     <div class="btn-group-vertical btn-group-lg" v-if="montrerListe">
       <button

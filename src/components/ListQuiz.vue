@@ -26,13 +26,13 @@ export default {
     }
   },
 
-  methods: {
-    selectQuiz(quiz) {
-      this.quiz = quiz;
-      this.$emit("select-quiz", quiz.id);
+ methods: {
+    selectQuiz: function(idQuiz) {
+      this.idQuiz = idQuiz;
+      this.$emit("select-quiz", idQuiz);
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
